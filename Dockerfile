@@ -2,6 +2,7 @@ FROM python:3.6
 
 COPY manage.py gunicorn-cfg.py requirements.txt ./
 COPY core core
+COPY app app
 
 RUN pip install -r requirements.txt
 
